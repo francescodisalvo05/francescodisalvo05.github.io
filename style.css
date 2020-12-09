@@ -1,0 +1,209 @@
+/* ------- ANIMATION ----------- */
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.content {
+    animation: transitionIn 1.5s;
+}
+
+/* ------- STYLE ----------- */
+
+* {
+    padding: 0;
+    margin : 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width : 100%;
+    height: auto;
+    margin : 50px auto;
+    overflow: hidden;
+}
+
+/* ------- BUTTONS ----------- */
+
+.btn-box {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    width : 80%;
+    overflow: hidden;
+}
+
+.btn-box button {
+    background : transparent;
+    border : none;
+    outline :  none;
+    cursor : pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size : 2vh;
+    font-weight: bold;
+}
+
+.btn-blu {
+    color : #306998;
+}
+
+.btn-box .fas {
+    margin-right: 20px;
+    color : black;
+}
+
+.btn-box button:hover .fas {
+    color : #306998;
+}
+
+/* ------- CONTENT ----------- */
+
+.content-left img {
+        width: 80%;
+        height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition:  0.3s;
+    width: 80%;
+    left: 5%;
+    right: 5%;
+    margin : 50px auto;
+}
+
+.content-right {
+    flex-basis: 50%;
+}
+
+.content-right p {
+    font-size: 2vh;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+.content-right h1 {
+    font-size: 4vh;
+    padding: 10px 0;
+}
+
+.content-left {
+    flex-basis: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#content-1 {
+    transform: translateX(0px);
+}
+
+.blue-title {
+    font-family: 'JetBrains Mono', monospace;
+    color:#306998;
+    padding:3%;
+    font-size: 4vh;
+}
+
+.content-title {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 !important;
+    font-size: 3vh;
+}
+
+.logo {
+    width: 15vh;
+    height: auto;
+}
+
+.link {
+    width: 5em;
+    display: block;
+    padding: 8px 5px;
+    border-radius: 4em;
+    text-decoration: none;
+    background-color: #306998;
+    color : #fff;
+    text-align:center;
+    font-size: 2vh;
+}
+
+.repo {
+    background-color: #306998;
+}
+
+.repo:hover{
+    color: #FFD43B;
+}
+
+.code {
+    background-color: #FFD43B;
+}
+
+.code:hover{
+    color: #306998;
+}
+
+/* --- ICONS --- */
+.social {
+    color: #306998;
+    padding: 3% 3%;
+}
+
+/* --- BLOG --- */
+.blog {
+    height: 40vh !important;
+    width: auto !important;
+}
+
+/* --- FOOTER --- */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #306998;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.not-fixed {
+    position: absolute;
+    bottom: -50%;
+}
+
+/* ---- ZOOM ---- */
+
+.img-hover-zoom {
+    height: 50%; /* Modify this according to your need */
+    overflow: hidden; /* Removing this will break the effects */
+}
+
+.img-hover-zoom--slowmo img {
+transform-origin: 50% 50%;
+transition: transform 0.3s, filter 1s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+filter: brightness(100%);
+transform: scale(1.10);
+}
