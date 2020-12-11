@@ -33,7 +33,7 @@
 .hero {
     width : 100%;
     height: auto;
-    margin : 50px auto;
+    margin : 50px auto 0 auto;
     overflow: hidden;
 }
 
@@ -81,7 +81,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     transition:  0.3s;
     width: 80%;
     left: 5%;
@@ -185,9 +184,15 @@
     font-size: 2vh;
 }
 
-.not-fixed {
-    position: absolute;
-    bottom: -50%;
+.footer-not-fixed {
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #306998;
+    color: white;
+    text-align: center;
+    font-size: 2vh;
 }
 
 /* ---- ZOOM ---- */
