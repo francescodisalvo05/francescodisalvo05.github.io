@@ -241,6 +241,7 @@ transform: scale(1.10);
     white-space: pre-line;
     display: inline;
     color: grey;
+    font-size: 1.5vh;
 }
 
 .article-title {
