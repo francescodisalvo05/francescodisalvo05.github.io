@@ -212,3 +212,84 @@ transition: transform 0.3s, filter 1s ease-in-out;
 filter: brightness(100%);
 transform: scale(1.10);
 }
+
+/* -- ARTICLE -- */
+
+.article {
+    display: flex;
+    align-items: center;
+}
+
+.article a {
+    font-size: 4vh; 
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    margin-right: 3%;
+    text-decoration: none;
+}
+
+.article a:hover {
+    color: #306998
+}
+
+.article p {
+    margin-bottom: 0;
+}
+
+.article-date {
+    white-space: pre-line;
+    display: inline;
+    color: grey;
+}
+
+.article-title {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 4vh;
+}
+
+.article-body {
+    text-align: justify;
+    font-size: 1.8vh;
+}
+
+
+
+.chip {
+  display: inline-block;
+  padding: 0 2vh;
+  height:  2vh;
+  font-size:  1.5vh;
+  line-height: 2vh;
+  border-radius: 3vh;
+  background-color: #f1f1f1;
+}
+
+.chip-div {
+  float: left;
+  margin: 0 1vh 0 -2.5vh;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+}
+
+.chip-study {
+    background-color: #306998;
+}
+
+.chip-finance {
+    background-color: #77dd77;
+}
+
+.chip-ds {
+    background-color: #ff3300;
+}
+
+.chip-book {
+    background-color: #ffc500;
+}
+
+.article-container img {
+    width: 35vh;
+    height: auto;
+}
