@@ -218,6 +218,7 @@ transform: scale(1.10);
 .article {
     display: flex;
     align-items: center;
+    margin-top: 5vh;
 }
 
 .article a {
