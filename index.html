@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Academic Profile Template</title>
+    <link rel="stylesheet" href="code/style.css">
+</head>
+<body>
+    <div class="mobile-nav">
+        <button id="menu-toggle">≡</button>
+        <h2>About me</h2>
+        <button id="nav-toggle">≡</button>
+    </div>
+    
+    <!-- Mobile Menu Overlays -->
+    <div class="mobile-menu-overlay" id="left-menu-overlay">
+        <h2>Francesco <div>Di Salvo</div></h2>
+        <ul class="social-links">
+            <li><a href="https://scholar.google.com/citations?user=zOASNTUAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            <li><a href="https://github.com/francescodisalvo05" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/francescodisalvo-pa/" target="_blank">LinkedIn</a></li>
+            <li><a href="assets/documents/cv.pdf" target="_blank">CV</a></li>
+        </ul>
+    </div>
+    
+    <div class="mobile-right-menu" id="right-menu-overlay">
+        <h2>Navigation</h2>
+        <ul class="social-links">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#selected-papers">Selected papers</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#side-projects">Side projects</a></li>
+            <li><a href="#email">Email</a></li>
+        </ul>
+    </div>
+    
+    <div class="sidebar">
+        <h2>Francesco <div>Di Salvo</div></h2>
+        <ul class="social-links">
+            <li><a href="https://scholar.google.com/citations?user=zOASNTUAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            <li><a href="https://github.com/francescodisalvo05" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/francescodisalvo-pa/" target="_blank">LinkedIn</a></li>
+            <li><a href="assets/documents/cv.pdf" target="_blank">CV</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1 id="about-me">About me</h1>
+        <p> 
+            I am a PhD student at the <a href="https://www.uni-bamberg.de/en/ai/chair-of-explainable-machine-learning/team/" target="_blank">xAILab Bamberg</a>, 
+            under the supervision of <a href="https://scholar.google.com/citations?user=oKhGz8UAAAAJ&hl=en" target="_blank">Christian Ledig</a>. 
+            My research focuses on developing machine learning models that are robust, efficient, and privacy-aware, particularly for deployment 
+            in real-world healthcare settings. I work on improving generalization under distribution shifts while reducing the dependence 
+            on large training datasets and high computational resources. <br /><br />
+            
+            Previously, I worked on Bayesian uncertainty on dedicated breast-CT scans at 
+            the <a href="https://axti.radboudimaging.nl/" target="_blank">Advanced X-ray Tomographic Imaging lab</a>, under the supervision of <a href="https://scholar.google.com/citations?user=C6l5Es8AAAAJ&hl=en" target="_blank">Marco Caballo</a>. 
+            Finally, I also interned at <a href="https://www.cmre.nato.int/" target="_blank">NATO</a> and <a href="https://aikospace.com/" target="_blank">AIKO</a>, 
+            where I worked on anomaly detection on underwater communications and visual odometry on planetary-like environments, respectively. <br /><br />
+
+            Outside of research, I'm a slow but enthusiastic runner. Feel free to follow my progress on 
+            <a href="https://www.strava.com/athletes/58274303" target="_blank">Strava</a>!
+        </p>
+
+        <!-- 
+        
+        <div style="text-align: center;">
+            <img src="xAI-24-2_Francesco-Di-Salvo.jpg" alt="Profile Photo" class="profile-img">
+        </div>
+
+
+        <div class="note-box blue-box">
+            <p><strong>Regarding topic of interest:</strong> I know people who are experts in this field when I was younger 
+            but now they work in applied areas. This field needs more attention now more than ever. <a href="#">Here's 
+            a list of organizations where you can make a contribution</a>.</p>
+        </div>
+
+        <div class="note-box yellow-box">
+            <p><strong>Mentoring:</strong> I used to devote part of my time to mentoring at <a href="#">Mentoring Program</a>. Regardless of your 
+            background, don't hesitate to reach out if you have any questions about research or academia.</p>
+        </div>
+
+        -->
+
+        <h2 id="news">News</h2>
+
+        <ul class="paper-list" id="newsList">
+            <!-- Initial visible news items (first 4) -->
+            <li>[03/2025] One paper accepted at TMLR!</li> 
+            <li>[10/2024] Won the Best Paper Award Runner Up at ADSMI @ MICCAI 2024!</li>
+            <li>[09/2024] Attended the <a href="https://www.m2lschool.org/" target="_blank">M2L Summer School</a></li>
+            <li>[07/2024] One paper accepted at BMVC 2024!</li>
+            <li>[07/2024] One paper accepted at ADSMI @ MICCAI 2024!</li>
+            <li>[06/2024] One collaborative paper accepted at MICCAI 2024!</li>
+        
+            <!-- Hidden news items (will be revealed with "Show more") -->    
+            <li class="hidden-news">[04/2023] Started my PhD at the <a href="https://www.uni-bamberg.de/en/ai/chair-of-explainable-machine-learning/team/" target="_blank">xAILab Bamberg</a></li>
+            <li class="hidden-news">[09/2022] Started a research internship at <a href="https://www.cmre.nato.int/" target="_blank">NATO</a></li>
+            <li class="hidden-news">[04/2022] Started a research internship at <a href="https://axti.radboudimaging.nl/" target="_blank">AXTI Lab</a></li>
+        </ul>
+        
+        <button id="showMoreBtn" class="show-more-btn">Show more</button>
+        
+
+        <h2 id="selected-papers">Selected papers</h2>
+        
+        <ul class="paper-list">
+            <li>
+                <strong>An Embedding is Worth a Thousand Noisy Labels (TMLR, 2024)</strong><br>
+                <b>Francesco Di Salvo</b>, Sebastian Doerrich, Ines Rieger, Christian Ledig
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2408.14358" target="_blank"><span class="paper-badge arxiv">ARXIV</span></a>
+                    <a href="https://github.com/francescodisalvo05/wann-noisy-labels" target="_blank"><span class="paper-badge github">GITHUB</span></a>
+                </div>
+            </li>
+            <li>
+                <strong>Rethinking model prototyping through the medmnist+ dataset collection (Scientific Reports, 2025)</strong><br>
+                Sebastian Doerrich, <b>Francesco Di Salvo</b>, Julius Brockmann, Christian Ledig
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2404.15786" target="_blank"><span class="paper-badge arxiv">ARXIV</span></a>
+                    <a href="https://github.com/sdoerrich97/rethinking-model-prototyping-MedMNISTPlus" target="_blank"><span class="paper-badge github">GITHUB</span></a
+                </div>
+            </li>
+            <li>
+                <strong>Privacy-preserving datasets by capturing feature distributions with Conditional VAEs (BMVC, 2024)</strong><br>
+                <b>Francesco Di Salvo</b>, David Tafler, Sebastian Doerrich, Christian Ledig
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2408.00639" target="_blank"><span class="paper-badge arxiv">ARXIV</span></a>
+                    <a href="https://github.com/francescodisalvo05/cvae-anonymization" target="_blank"><span class="paper-badge github">GITHUB</span></a>
+                </div>
+            </li>
+            <li>
+                <strong>MedMNIST-C: Comprehensive benchmark and improved classifier robustness by simulating realistic image corruptions (MICCAI-W, 2024)</strong><br>
+                <b>Francesco Di Salvo</b>, Sebastian Doerrich, Christian Ledig
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2406.17536" target="_blank"><span class="paper-badge arxiv">ARXIV</span></a>
+                    <a href="https://github.com/francescodisalvo05/medmnistc-api" target="_blank"><span class="paper-badge github">GITHUB</span></a>
+                </div>
+            </li>
+            <li>
+                <strong>Self-supervised Vision Transformer are Scalable Generative Models for Domain Generalization (MICCAI, 2024)</strong><br>
+                Sebastian Doerrich, <b>Francesco Di Salvo</b>, Julius Brockmann, Christian Ledig
+                <div class="paper-links">
+                    <a href="https://arxiv.org/pdf/2407.02900" target="_blank"><span class="paper-badge arxiv">ARXIV</span></a>
+                    <a href="https://github.com/sdoerrich97/vits-are-generative-models" target="_blank"><span class="paper-badge github">GITHUB</span></a>
+                </div>
+            </li>
+        </ul>
+
+        <h2 id="teaching">Teaching</h2>
+        <ul class="paper-list">
+            <li>
+                Mathematics for Machine Learning (2023 - 2025) <br>
+            </li>
+            <li>
+                Robust Machine Learning (2023 - 2025) <br>
+            </li>
+            <li>
+                Thesis supervision (5x Master's, 1x Bachelor's) <br>
+                Contributed to one published outcome, and one <a href="https://www.uni-bamberg.de/en/xai/news/artikel/digital-healthcare-award-fuer-bachelorarbeit-in-berlin-am-9-april-2025/" target="_blank">thesis award</a>.
+            </li>
+        </ul>
+
+        <h2 id="awards">Awards</h2>
+        <ul class="paper-list">
+            <li>Third place at the <a href="https://www.uni-bamberg.de/en/xai/news/artikel/digital-healthcare-award-fuer-bachelorarbeit-in-berlin-am-9-april-2025/" target="_blank">DMEA Sparks Awards</a> for a supervised BSc thesis</li>
+            <li>Best Paper Award Runner Up at ADSMI @ MICCAI 2024</li>
+        </ul>
+
+        <h2 id="side-projects">Side projects</h2>
+        <ul class="paper-list">
+            <li>
+                <strong>The Illustrated Machine Learning</strong> (628 stars and 20+ daily users, as of May 2025)<br>
+                <a href="https://illustrated-machine-learning.github.io/" target="_blank">Website</a> containing a collection of visualizations and explanations of various machine learning concepts.
+            </li>
+        </ul>
+
+        <h2 id="email">Email</h2>
+        francesco.disalvo99[at]gmail.com
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Francesco Di Salvo.</p>
+                <p class="footer-update">Last updated: May 2025</p>
+            </div>
+        </footer>
+    </div>
+    
+    <div class="right-sidebar">
+        <ul class="social-links">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#selected-papers">Selected papers</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#side-projects">Side projects</a></li>
+            <li><a href="#email">Email</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Mobile navigation toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navToggle = document.getElementById('nav-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const rightSidebar = document.querySelector('.right-sidebar');
+            const leftMenuOverlay = document.getElementById('left-menu-overlay');
+            const rightMenuOverlay = document.getElementById('right-menu-overlay');
+            
+            // Initialize sidebar states
+            if (window.innerWidth <= 768) {
+                sidebar.style.display = 'none';
+                rightSidebar.style.display = 'none';
+            }
+            
+            // Left hamburger menu toggle
+            menuToggle.addEventListener('click', function() {
+                leftMenuOverlay.style.display = leftMenuOverlay.style.display === 'block' ? 'none' : 'block';
+                // Hide right menu when left menu is toggled
+                if (leftMenuOverlay.style.display === 'block') {
+                    rightMenuOverlay.style.display = 'none';
+                }
+            });
+            
+            // Right hamburger menu toggle
+            navToggle.addEventListener('click', function() {
+                rightMenuOverlay.style.display = rightMenuOverlay.style.display === 'block' ? 'none' : 'block';
+                // Hide left menu when right menu is toggled
+                if (rightMenuOverlay.style.display === 'block') {
+                    leftMenuOverlay.style.display = 'none';
+                }
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    sidebar.style.display = 'block';
+                    rightSidebar.style.display = 'block';
+                    leftMenuOverlay.style.display = 'none';
+                    rightMenuOverlay.style.display = 'none';
+                } else {
+                    sidebar.style.display = 'none';
+                    rightSidebar.style.display = 'none';
+                }
+            });
+            
+            // Close menu when clicking anywhere else on the page
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 768) {
+                    // If click is outside of menu toggle buttons and menu overlays
+                    if (!menuToggle.contains(event.target) && 
+                        !navToggle.contains(event.target) && 
+                        !leftMenuOverlay.contains(event.target) &&
+                        !rightMenuOverlay.contains(event.target)) {
+                        leftMenuOverlay.style.display = 'none';
+                        rightMenuOverlay.style.display = 'none';
+                    }
+                }
+            });
+            
+            // Make menu links close the menu when clicked
+            const leftMenuLinks = leftMenuOverlay.querySelectorAll('a');
+            const rightMenuLinks = rightMenuOverlay.querySelectorAll('a');
+            
+            leftMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    leftMenuOverlay.style.display = 'none';
+                });
+            });
+            
+            rightMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    rightMenuOverlay.style.display = 'none';
+                });
+            });
+        });
+
+        // show more/less functionality for news items
+        document.getElementById('showMoreBtn').addEventListener('click', function() {
+        const hiddenItems = document.querySelectorAll('.hidden-news');
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        
+        // Toggle visibility of hidden items
+        let allHidden = true;
+        
+        hiddenItems.forEach(item => {
+            if (item.style.display === 'list-item') {
+                item.style.display = 'none';
+                allHidden = true;
+            } else {
+                item.style.display = 'list-item';
+                allHidden = false;
+            }
+        });
+        
+        // Update button text
+        showMoreBtn.textContent = allHidden ? 'Show more' : 'Show less';
+    });
+    </script>
+</body>
+</html>
