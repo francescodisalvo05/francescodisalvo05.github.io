@@ -82,6 +82,11 @@ body {
 .sidebar {
     width: 200px;
     padding-right: 20px;
+
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    align-self: flex-start;
 }
 
 .main-content {
@@ -92,7 +97,28 @@ body {
 .right-sidebar {
     width: 150px;
     padding-left: 20px;
+
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    align-self: flex-start;
 }
+
+.right-sidebar .social-links li {
+    margin-bottom: 8px; /* Reduced from 10px */
+}
+
+/* If you want to make the heading links smaller */
+.right-sidebar .social-links a {
+    font-size: 12px;
+}
+
+.right-sidebar .social-links a.active {
+    font-weight: 600;
+    color: #0366d6;
+}
+
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
@@ -181,6 +207,11 @@ a:hover {
 }
 
 .social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links-small {
     list-style-type: none;
     padding: 0;
 }
